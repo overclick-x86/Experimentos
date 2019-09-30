@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Teste de validação</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+     <body>
+        
+         <input type="text" id="texto-primario" /> 
+        
+        <script type="text/javascript">
+            document.getElementById("texto-primario")
+                    .addEventListener("keypress", function (e) {
+                        if (this.value.length >= 40) {
+                            alert("O número máximo de caracteres neste input são 40");
+                            e.preventDefault();
+                            return false;
+                        }
+                    });
+        </script>
+    </body>
+</html>
